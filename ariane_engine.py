@@ -13,7 +13,7 @@ from pathlib import Path
 # CONFIGURATION
 # ============================================================
 
-OLLAMA_URL = "http://127.0.0.1:11434"
+OLLAMA_URL = os.getenv("OLLAMA_URL","http://127.0.0.1:11434").rstrip("/")
 
 EMBED_MODEL = "bge-m3"
 LLM_MODEL = "llama3.1:8b"
