@@ -7,7 +7,7 @@ import requests
 import numpy as np
 
 from rank_bm25 import BM25Okapi
-
+from pathlib import Path
 
 # ============================================================
 # CONFIGURATION
@@ -18,15 +18,11 @@ OLLAMA_URL = "http://127.0.0.1:11434"
 EMBED_MODEL = "bge-m3"
 LLM_MODEL = "llama3.1:8b"
 
-CHUNKS_PATH = (
-    "/kaggle/input/datasets/"
-    "loicmaterre/chunks/chunks.json"
-)
 
-CACHE_PATH = (
-    "/kaggle/working/ariane_app/"
-    "official_embeddings_bge_m3.npy"
-)
+BASE_DIR = Path(__file__).resolve().parent
+
+CHUNKS_PATH = BASE_DIR / "data" / "chunks.json"
+CACHE_PATH = BASE_DIR / "official_embeddings_bge_m3.npy"
 
 VECTOR_WEIGHT = 0.70
 BM25_WEIGHT = 0.30
