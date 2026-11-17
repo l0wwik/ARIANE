@@ -1,0 +1,634 @@
+
+/* =========================================================
+   ARIANE — STYLE UTT
+   ========================================================= */
+
+:root {
+    --utt-blue: #173b7a;
+    --utt-blue-dark: #112f64;
+    --ariane-yellow: #f4cf32;
+    --ariane-yellow-soft: #fff7d1;
+    --page-bg: #f4f6f9;
+    --border: #dfe4ec;
+    --text: #1c2735;
+    --muted: #6f7b8a;
+}
+
+html, body,
+[data-testid="stAppViewContainer"] {
+    background: var(--page-bg);
+    color: var(--text);
+}
+
+[data-testid="stHeader"] {
+    display: none;
+}
+
+[data-testid="stToolbar"] {
+    display: none;
+}
+
+.block-container {
+    padding: 0 !important;
+    max-width: 100% !important;
+}
+
+
+/* =========================================================
+   TOP BAR UTT
+   ========================================================= */
+
+.utt-topbar {
+    width: 100%;
+    height: 64px;
+    background: linear-gradient(
+        90deg,
+        var(--utt-blue-dark),
+        var(--utt-blue)
+    );
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    color: white;
+    box-sizing: border-box;
+}
+
+.utt-brand {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-right: 45px;
+}
+
+.utt-logo {
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.eut-logo {
+    font-size: 23px;
+    font-weight: 500;
+    opacity: 0.9;
+}
+
+.topnav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex: 1;
+}
+
+.topnav a {
+    color: white !important;
+    text-decoration: none !important;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.topnav a:hover {
+    opacity: 0.8;
+}
+
+.catalogue {
+    color: var(--ariane-yellow) !important;
+}
+
+.top-actions {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   SECONDARY ARIANE BAR
+   ========================================================= */
+
+.ariane-subbar {
+    background: var(--utt-blue);
+    border-top: 1px solid rgba(255,255,255,.15);
+    height: 42px;
+    display: flex;
+    align-items: center;
+    padding-left: 42px;
+    box-sizing: border-box;
+}
+
+.ariane-home {
+    color: white;
+    font-size: 13px;
+}
+
+.ariane-home::before {
+    content: "⌂";
+    margin-right: 8px;
+}
+
+
+/* =========================================================
+   PAGE
+   ========================================================= */
+
+.page-wrap {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 27px 28px 60px 28px;
+}
+
+.page-title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.page-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0;
+    color: #1f2b39;
+}
+
+.page-title span {
+    color: var(--utt-blue);
+}
+
+.revision-btn {
+    border: 1px solid var(--utt-blue);
+    background: white;
+    color: var(--utt-blue) !important;
+    text-decoration: none !important;
+    padding: 9px 15px;
+    border-radius: 3px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   SECTIONS
+   ========================================================= */
+
+.section-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 8px 0 14px 0;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-bottom: 27px;
+}
+
+.course-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    overflow: hidden;
+    min-height: 190px;
+    box-shadow: 0 1px 2px rgba(15, 30, 60, 0.03);
+}
+
+.course-head {
+    background: var(--utt-blue);
+    color: white;
+    min-height: 57px;
+    display: flex;
+    align-items: center;
+    padding: 0 17px;
+    gap: 12px;
+}
+
+.course-icon {
+    font-size: 20px;
+}
+
+.course-code {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.course-body {
+    padding: 18px;
+}
+
+.course-name {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.course-semester {
+    font-size: 12px;
+    color: var(--muted);
+    margin-bottom: 20px;
+}
+
+.primary-link {
+    display: inline-block;
+    background: #1675bd;
+    color: white !important;
+    text-decoration: none !important;
+    padding: 9px 14px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   LOWER DASHBOARD
+   ========================================================= */
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.dashboard-panel {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+}
+
+.panel-title {
+    font-size: 15px;
+    font-weight: 700;
+    padding: 15px 17px 11px 17px;
+}
+
+.panel-row {
+    border-top: 1px solid #edf0f4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 17px;
+    font-size: 13px;
+}
+
+.panel-row-left {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.doc-icon {
+    color: #4776a8;
+    font-size: 15px;
+}
+
+.activity-date {
+    color: var(--muted);
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .course-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .topnav {
+        display: none;
+    }
+
+    .utt-topbar {
+        padding: 0 20px;
+    }
+}
+
+
+/* =========================================================
+   VUE D'UN COURS
+   ========================================================= */
+
+.course-page-header {
+    margin-bottom: 18px;
+}
+
+.breadcrumb {
+    font-size: 11px;
+    color: #748094;
+    margin-bottom: 15px;
+}
+
+.course-small-code {
+    font-size: 11px;
+    color: #6f7b8a;
+    margin-bottom: 4px;
+}
+
+.course-big-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1c2735;
+}
+
+
+.course-tabs {
+    display: flex;
+    gap: 2px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 20px;
+}
+
+.course-tab {
+    padding: 10px 17px;
+    font-size: 12px;
+    color: #39475a;
+    text-decoration: none !important;
+    border-bottom: 3px solid transparent;
+}
+
+.course-tab.active {
+    background: var(--ariane-yellow);
+    color: #20325b !important;
+    font-weight: 700;
+}
+
+
+/* MAIN 3-COLUMN LAYOUT */
+
+.course-layout {
+    display: grid;
+    grid-template-columns: 230px minmax(480px, 1fr) 300px;
+    gap: 16px;
+    align-items: start;
+}
+
+
+/* LEFT : PLAN */
+
+.course-plan {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.course-plan-title {
+    padding: 14px 15px;
+    font-weight: 700;
+    font-size: 14px;
+    border-bottom: 1px solid var(--border);
+}
+
+.plan-section {
+    padding: 10px 13px;
+    font-size: 12px;
+    border-bottom: 1px solid #eef1f5;
+    font-weight: 600;
+}
+
+.plan-subitem {
+    padding: 8px 13px 8px 28px;
+    font-size: 12px;
+    color: #596779;
+}
+
+.plan-subitem.active {
+    background: var(--ariane-yellow-soft);
+    border-left: 4px solid var(--ariane-yellow);
+    font-weight: 700;
+    color: #1f365f;
+}
+
+
+/* CENTER : OFFICIAL SLIDE */
+
+.slide-panel {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 3px;
+}
+
+.slide-panel-head {
+    padding: 12px 15px;
+    border-bottom: 1px solid var(--border);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.fake-slide {
+    margin: 16px;
+    border: 1px solid #cfd6e0;
+    background: white;
+    min-height: 390px;
+}
+
+.fake-slide-header {
+    height: 48px;
+    background: var(--utt-blue);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 18px;
+    font-size: 11px;
+}
+
+.fake-slide-body {
+    padding: 32px 38px;
+}
+
+.fake-slide-title {
+    color: #1665a4;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.fake-slide-body ul {
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+.formula-box {
+    width: fit-content;
+    margin: 24px auto;
+    padding: 16px 28px;
+    background: #eef3f7;
+    border: 1px solid #d5dde7;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.slide-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px 16px 16px;
+    font-size: 11px;
+}
+
+.slide-nav-btn {
+    border: 1px solid #aab5c5;
+    padding: 7px 11px;
+    color: #334560 !important;
+    text-decoration: none !important;
+    background: white;
+    border-radius: 3px;
+}
+
+
+/* RIGHT : ARIANE */
+
+.ariane-panel {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.ariane-panel-title {
+    background: var(--ariane-yellow-soft);
+    padding: 13px 15px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.ariane-summary {
+    padding: 16px;
+}
+
+.summary-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: #23457c;
+    margin-bottom: 6px;
+}
+
+.summary-subtitle {
+    color: #7a8695;
+    font-size: 10px;
+    margin-bottom: 15px;
+}
+
+.ariane-summary ul {
+    margin: 0 0 18px 18px;
+    padding: 0;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.ask-ariane-btn {
+    display: block;
+    background: #1675bd;
+    color: white !important;
+    text-decoration: none !important;
+    text-align: center;
+    padding: 11px 12px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.ariane-info {
+    border-top: 1px solid var(--border);
+    padding: 12px 15px;
+    font-size: 10px;
+    color: #758092;
+    line-height: 1.5;
+}
+
+
+@media (max-width: 1100px) {
+
+    .course-layout {
+        grid-template-columns: 200px 1fr;
+    }
+
+    .ariane-panel {
+        grid-column: 1 / -1;
+    }
+}
+
+
+/* =========================================================
+   INTERROGER ARIANE
+   ========================================================= */
+
+.ask-header {
+    margin-bottom: 20px;
+}
+
+.ask-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.ask-course {
+    color: #687688;
+    font-size: 12px;
+}
+
+.answer-section-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #223e70;
+    margin-bottom: 8px;
+}
+
+.answer-warning {
+    background: #fff7d1;
+    border-left: 4px solid #f4cf32;
+    padding: 12px 14px;
+    font-size: 12px;
+    line-height: 1.5;
+    margin-top: 16px;
+}
+
+.promotion-box {
+    background: #f6f8fb;
+    border-left: 4px solid #4776a8;
+    padding: 12px 14px;
+    font-size: 12px;
+    margin-top: 16px;
+}
+
+.source-item {
+    padding: 12px 0;
+    border-bottom: 1px solid #e5e9ef;
+}
+
+.source-slide {
+    font-size: 13px;
+    color: #1c4c87;
+    font-weight: 700;
+}
+
+.source-score {
+    font-size: 10px;
+    color: #7b8796;
+}
+
+[data-testid="stTextInput"] input {
+    min-height: 46px;
+    border-radius: 3px;
+    border: 1px solid #bcc7d5;
+}
+
+[data-testid="stRadio"] {
+    background: white;
+    padding: 5px 0 8px 0;
+}
+
+.stButton > button {
+    border-radius: 3px;
+    font-weight: 700;
+}
