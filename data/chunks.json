@@ -1,0 +1,135 @@
+[
+  {
+    "chunk_id": "slide_1",
+    "slide": 1,
+    "source": "support_officiel",
+    "course": "STAT_PROBA",
+    "text": "UTT - Jeu de données fictif ARIANE\nSTAT_PROBA  |  Slide 1/19\nSTAT_PROBA - Mesures de tendance et de dispersion\nCours fictif conçu pour le benchmark ARIANE\n• Objectif : comprendre moyenne, variance et écart-type.\n• Les informations de ce document constituent la source officielle de référence.\n• Les notions non présentes dans ce support ne doivent pas être ajoutées par ARIANE.\nDocument entièrement fictif - destiné aux tests de retrieval, RAG et détection de contradictions."
+  },
+  {
+    "chunk_id": "slide_2",
+    "slide": 2,
+    "source": "support_officiel",
+    "course": "STAT_PROBA",
+    "text": "UTT - Jeu de données fictif ARIANE\nSTAT_PROBA  |  Slide 2/19\nObjectifs d'apprentissage\n• Calculer et interpréter une moyenne.\n• Comprendre pourquoi les écarts à la moyenne sont élevés au carré.\n• Calculer et interpréter une variance.\n• Relier variance et écart-type.\n• Identifier les erreurs d'interprétation les plus fréquentes.\nDocument entièrement fictif - destiné aux tests de retrieval, RAG et détection de contradictions."
+  },
+  {
+    "chunk_id": "slide_3",
+    "slide": 3,
+    "source": "support_officiel",
+    "course": "STAT_PROBA",
+    "text": "UTT - Jeu de données fictif ARIANE\nSTAT_PROBA  |  Slide 3/19\nLa moyenne\n• Pour une série x1, x2, ..., xn, la moyenne est : xI = (x1 + ... + xn) / n.\n• La moyenne décrit une position centrale de la série.\n• Elle ne mesure pas la dispersion : deux séries peuvent avoir la même moyenne mais des\n  dispersions très différentes.\nDocument entièrement fictif - destiné aux tests de retrieval, RAG et détection de contradictions."
+  },
+  {
+    "chunk_id": "slide_4",
+    "slide": 4,
+    "source": "support_officiel",
+    "course": "STAT_PROBA",
+    "text": "UTT - Jeu de données fictif ARIANE\nSTAT_PROBA  |  Slide 4/19\nÉcarts à la moyenne\n• Pour chaque observation xi, l'écart à la moyenne est xi - xI.\n• Les écarts peuvent être positifs, négatifs ou nuls.\n• La somme des écarts à la moyenne est toujours égale à 0.\n• On ne peut donc pas moyenner directement les écarts signés pour mesurer la dispersion.\nDocument entièrement fictif - destiné aux tests de retrieval, RAG et détection de contradictions."
+  },
+  {
+    "chunk_id": "slide_5",
+    "slide": 5,
+    "source": "support_officiel",
+    "course": "STAT_PROBA",
+    "text": "UTT - Jeu de données fictif ARIANE\nSTAT_PROBA  |  Slide 5/19\nDéfinition de la variance\nV = (1/n) × Σ(xI - xI)²\n• Dans ce cours, la variance descriptive d'une série est la moyenne des carrés des écarts à la\n  moyenne.\n• Formule : V = (1/n) × Σ(xi - xI)².\n• La variance est toujours positive ou nulle.\nDocument entièrement fictif - destiné aux tests de retrieval, RAG et détection de contradictions."
+  },
+  {
+    "chunk_id": "slide_6",
+    "slide": 6,
+    "source": "support_officiel",
+    "course": "STAT_PROBA",
+    "text": "UTT - Jeu de données fictif ARIANE\nSTAT_PROBA  |  Slide 6/19\nPourquoi élever les écarts au carré ?\n• Le carré empêche les écarts positifs et négatifs de se compenser.\n• Il donne davantage de poids aux observations éloignées de la moyenne.\n• Il conduit à des propriétés mathématiques utiles pour les calculs.\n• Dans ce cours, on n'utilise pas la moyenne des écarts absolus comme mesure principale.\nDocument entièrement fictif - destiné aux tests de retrieval, RAG et détection de contradictions."
+  },
+  {
+    "chunk_id": "slide_7",
+    "slide": 7,
+    "source": "support_officiel",
+    "course": "STAT_PROBA",
+    "text": "UTT - Jeu de données fictif ARIANE\nSTAT_PROBA  |  Slide 7/19\nPropriétés de la variance\nVar(aX + b) = a² Var(X)\n• V ≥ 0.\n• V = 0 si et seulement si toutes les observations sont identiques.\n• Ajouter une constante b à toutes les valeurs ne change pas la variance.\n• Multiplier toutes les valeurs par a multiplie la variance par a².\n• Donc : Var(aX + b) = a² Var(X).\nDocument entièrement fictif - destiné aux tests de retrieval, RAG et détection de contradictions."
+  },
+  {
+    "chunk_id": "slide_8",
+    "slide": 8,
+    "source": "support_officiel",
+    "course": "STAT_PROBA",
+    "text": "UTT - Jeu de données fictif ARIANE\nSTAT_PROBA  |  Slide 8/19\nL'écart-type\nσ = √V\n• L'écart-type est la racine carrée de la variance.\n• Formule : σ = √V.\n• Comme la racine carrée est positive, l'écart-type est toujours positif ou nul.\nDocument entièrement fictif - destiné aux tests de retrieval, RAG et détection de contradictions."
+  },
+  {
+    "chunk_id": "slide_9",
+    "slide": 9,
+    "source": "support_officiel",
+    "course": "STAT_PROBA",
+    "text": "UTT - Jeu de données fictif ARIANE\nSTAT_PROBA  |  Slide 9/19\nUnités de mesure\n• Si la variable est exprimée en mètres, la variance est exprimée en mètres carrés.\n• L'écart-type est exprimé dans la même unité que la variable.\n• C'est pour cette raison que l'écart-type est souvent plus facile à interpréter directement.\nDocument entièrement fictif - destiné aux tests de retrieval, RAG et détection de contradictions."
+  },
+  {
+    "chunk_id": "slide_10",
+    "slide": 10,
+    "source": "support_officiel",
+    "course": "STAT_PROBA",
+    "text": "UTT - Jeu de données fictif ARIANE\nSTAT_PROBA  |  Slide 10/19\nExemple complet\n• Série : 2, 4, 4, 6.\n• Moyenne : xI = 4.\n• Carrés des écarts : 4, 0, 0, 4.\n• Variance : V = (4 + 0 + 0 + 4) / 4 = 2.\n• Écart-type : σ = √2 ≈ 1,41.\nDocument entièrement fictif - destiné aux tests de retrieval, RAG et détection de contradictions."
+  },
+  {
+    "chunk_id": "slide_11",
+    "slide": 11,
+    "source": "support_officiel",
+    "course": "STAT_PROBA",
+    "text": "UTT - Jeu de données fictif ARIANE\nSTAT_PROBA  |  Slide 11/19\nInterpréter une variance\n• Une variance plus élevée indique une dispersion plus forte autour de la moyenne.\n• Une variance faible indique que les observations sont plus regroupées.\n• Une variance élevée ne signifie pas que la moyenne est élevée.\n• Comparer des variances de variables exprimées dans des unités différentes peut être trompeur.\nDocument entièrement fictif - destiné aux tests de retrieval, RAG et détection de contradictions."
+  },
+  {
+    "chunk_id": "slide_12",
+    "slide": 12,
+    "source": "support_officiel",
+    "course": "STAT_PROBA",
+    "text": "UTT - Jeu de données fictif ARIANE\nSTAT_PROBA  |  Slide 12/19\nEffet d'un changement d'origine\nVar(X + b) = Var(X)\n• Ajouter 10 à chaque observation augmente la moyenne de 10.\n• Les écarts à la nouvelle moyenne restent identiques.\n• La variance ne change donc pas.\n• Exemple : Var(X + 10) = Var(X).\nDocument entièrement fictif - destiné aux tests de retrieval, RAG et détection de contradictions."
+  },
+  {
+    "chunk_id": "slide_13",
+    "slide": 13,
+    "source": "support_officiel",
+    "course": "STAT_PROBA",
+    "text": "UTT - Jeu de données fictif ARIANE\nSTAT_PROBA  |  Slide 13/19\nEffet d'un changement d'échelle\n• Multiplier toutes les observations par 2 multiplie tous les écarts par 2.\n• Les carrés des écarts sont alors multipliés par 4.\n• La variance est donc multipliée par 4.\n• L'écart-type, lui, est multiplié par 2.\nDocument entièrement fictif - destiné aux tests de retrieval, RAG et détection de contradictions."
+  },
+  {
+    "chunk_id": "slide_14",
+    "slide": 14,
+    "source": "support_officiel",
+    "course": "STAT_PROBA",
+    "text": "UTT - Jeu de données fictif ARIANE\nSTAT_PROBA  |  Slide 14/19\nErreur fréquente n°1\n• Faux : 'la variance peut être négative si beaucoup de valeurs sont sous la moyenne'.\n• Les écarts peuvent être négatifs, mais leurs carrés sont toujours positifs ou nuls.\n• La variance ne peut donc jamais être négative.\nLa variance est toujours ≥ 0.\nDocument entièrement fictif - destiné aux tests de retrieval, RAG et détection de contradictions."
+  },
+  {
+    "chunk_id": "slide_15",
+    "slide": 15,
+    "source": "support_officiel",
+    "course": "STAT_PROBA",
+    "text": "UTT - Jeu de données fictif ARIANE\nSTAT_PROBA  |  Slide 15/19\nErreur fréquente n°2\n• Faux : 'multiplier toutes les valeurs par 2 double la variance'.\n• La variance est multipliée par le carré du facteur.\n• Multiplier par 2 => variance multipliée par 4.\nVar(2X) = 4 Var(X)\nDocument entièrement fictif - destiné aux tests de retrieval, RAG et détection de contradictions."
+  },
+  {
+    "chunk_id": "slide_16",
+    "slide": 16,
+    "source": "support_officiel",
+    "course": "STAT_PROBA",
+    "text": "UTT - Jeu de données fictif ARIANE\nSTAT_PROBA  |  Slide 16/19\nErreur fréquente n°3\n• Variance et écart-type ne sont pas la même quantité.\n• La variance utilise l'unité au carré.\n• L'écart-type est la racine carrée de la variance et retrouve l'unité d'origine.\nDocument entièrement fictif - destiné aux tests de retrieval, RAG et détection de contradictions."
+  },
+  {
+    "chunk_id": "slide_17",
+    "slide": 17,
+    "source": "support_officiel",
+    "course": "STAT_PROBA",
+    "text": "UTT - Jeu de données fictif ARIANE\nSTAT_PROBA  |  Slide 17/19\nExercice\n• On considère la série : 5, 5, 7, 7.\n• 1. Calculer la moyenne.\n• 2. Calculer la variance avec la formule du cours.\n• 3. En déduire l'écart-type.\n• 4. Que devient la variance si toutes les valeurs sont multipliées par 3 ?\nDocument entièrement fictif - destiné aux tests de retrieval, RAG et détection de contradictions."
+  },
+  {
+    "chunk_id": "slide_18",
+    "slide": 18,
+    "source": "support_officiel",
+    "course": "STAT_PROBA",
+    "text": "UTT - Jeu de données fictif ARIANE\nSTAT_PROBA  |  Slide 18/19\nCorrection de l'exercice\n• Moyenne : 6.\n• Carrés des écarts : 1, 1, 1, 1.\n• Variance : V = 1.\n• Écart-type : σ = 1.\n• Après multiplication de toutes les valeurs par 3 : la variance est multipliée par 9, donc V = 9.\nDocument entièrement fictif - destiné aux tests de retrieval, RAG et détection de contradictions."
+  },
+  {
+    "chunk_id": "slide_19",
+    "slide": 19,
+    "source": "support_officiel",
+    "course": "STAT_PROBA",
+    "text": "UTT - Jeu de données fictif ARIANE\nSTAT_PROBA  |  Slide 19/19\nÀ retenir\n• Moyenne = position centrale.\n• Variance = moyenne des carrés des écarts à la moyenne.\n• Écart-type = racine carrée de la variance.\n• Ajouter une constante ne change pas la variance.\n• Multiplier par a multiplie la variance par a².\n• Le cours ne traite pas ici de l'estimateur corrigé en n-1, du coefficient de variation ni de l'histoire\n  de la variance.\nSi une question porte sur un sujet absent de ce cours, ARIANE doit le signaler.\nDocument entièrement fictif - destiné aux tests de retrieval, RAG et détection de contradictions."
+  }
+]
